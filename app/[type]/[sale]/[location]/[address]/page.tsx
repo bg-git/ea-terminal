@@ -1,5 +1,5 @@
-import '../../../globals.scss';
-import '../../../details-page.scss';
+import '../../../../globals.scss';
+import '../../../../details-page.scss';
 
 interface Params {
   type: string;
