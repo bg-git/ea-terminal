@@ -8,8 +8,12 @@ interface Params {
   address: string;
 }
 
-export default function DetailsPage({ params }: { params: Params }) {
-  const { type, sale, location, address } = params;
+export default async function DetailsPage({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
+  const { type, sale, location, address } = await params;
 
   // Replace this with a real fetch.
   const property = {
