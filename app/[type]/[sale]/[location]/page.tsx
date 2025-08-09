@@ -8,8 +8,12 @@ interface Params {
   location: string;
 }
 
-export default function SearchResultsPage({ params }: { params: Params }) {
-  const { type, sale, location } = params;
+export default async function SearchResultsPage({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
+  const { type, sale, location } = await params;
 
   // Dummy data—replace with a real fetch call.
   const listings = [
