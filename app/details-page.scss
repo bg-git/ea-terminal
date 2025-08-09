@@ -1,0 +1,31 @@
+.details-page {
+  padding: 2rem;
+}
+
+.details-skeleton {
+  padding: 2rem;
+  animation: pulse 1.5s infinite ease-in-out;
+
+  .title-skeleton,
+  .info-skeleton {
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+  }
+
+  .title-skeleton {
+    height: 2rem;
+    width: 60%;
+  }
+
+  .info-skeleton {
+    height: 1rem;
+    width: 40%;
+  }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
