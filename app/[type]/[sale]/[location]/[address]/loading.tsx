@@ -1,5 +1,5 @@
-import '../../../globals.scss';
-import '../../../details-page.scss';
+import '../../../../globals.scss';
+import '../../../../details-page.scss';
 
 export default function Loading() {
   return (
