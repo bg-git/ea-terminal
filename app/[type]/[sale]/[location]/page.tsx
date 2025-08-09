@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import '../../globals.scss';
-import '../../search-results.scss';
+import '../../../globals.scss';
+import '../../../search-results.scss';
 
 interface Params {
   type: string;
